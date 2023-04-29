@@ -1,10 +1,9 @@
 //////////////////////////////////////////////////////////////////////////////
 //                                                                          //
-//         Projekt C.1 - Telfonny zoznam                                    //
-//         Vypracoval - Peter Zdravekcy                                     //
-//         10.11.2019                                                       //
 //                                                                          //
-//                                                                          //
+//                      Projekt c.1 - Telefónny zoznam                      //
+//                      Vypracoval - Peter Zdravecký                        //
+//                      10.11.2019                                          //
 //                                                                          //
 //                                                                          //
 //////////////////////////////////////////////////////////////////////////////
@@ -25,7 +24,7 @@ bool compare(char *Line, char *Key);
 int main(int argc, char **argv)
 {
     char *Key = NULL;
-    //Overenie argumentu a priradenie hodnoty hladanej sekvencei na kontrolu
+    //Overenie argumentu a priradenie hodnoty hladanej sekvenci na kontrolu
     if (argc >= 2)
     {
         if (isNumber(argv[1]))
@@ -98,7 +97,7 @@ void convert(char *buffer)
     for (int i = 0; buffer[i] != '\0'; i++)
     {
         buffer[i] = tolower(buffer[i]);
-        //Convertuj pismena na čisla
+        //Konvertuj písmena na čísla
         if ((buffer[i] >= 'a') && (buffer[i] <= 'c'))
             buffer[i] = '2';
         else if ((buffer[i] >= 'd') && (buffer[i] <= 'f'))
